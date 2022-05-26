@@ -39,7 +39,6 @@ RUN mkdir -p $APP_NAME
 WORKDIR $APP_NAME
 
 COPY views views/
-COPY assets assets/
 COPY .env ./
  
 COPY --from=build-env $APP_NAME/go-api $APP_NAME
