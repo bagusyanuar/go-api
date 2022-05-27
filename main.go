@@ -47,7 +47,6 @@ func main() {
 		fmt.Printf("Successfull Migrate")
 		return
 	}
-	database.Migrate()
 	fmt.Printf("Successfull Migrate")
 	server := routes.InitRoutes()
 	port := fmt.Sprintf(":%s", appPort)
